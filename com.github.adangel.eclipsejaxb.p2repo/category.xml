@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature1_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature1" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature2_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature2" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature3_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature3" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature4_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature4" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <feature url="features/com.github.adangel.eclipsejaxb.feature5_1.0.0.qualifier.jar" id="com.github.adangel.eclipsejaxb.feature5" version="1.0.0.qualifier">
+      <category name="eclipse-jaxb-sample"/>
+   </feature>
+   <category-def name="eclipse-jaxb-sample" label="Eclipse JAXB Sample"/>
+</site>

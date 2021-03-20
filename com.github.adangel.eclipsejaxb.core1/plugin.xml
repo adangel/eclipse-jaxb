@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.github.adangel.eclipsejaxb.core1.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <action
+               class="com.github.adangel.eclipsejaxb.core1.actions.SampleAction"
+               id="com.github.adangel.eclipsejaxb.core1.actions.SampleAction"
+               label="&amp;Core JAXB Action"
+               toolbarPath="core1SampleGroup">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eclipse-jaxb core Plugin
+Bundle-SymbolicName: com.github.adangel.eclipsejaxb.core;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.github.adangel.eclipsejaxb.core.jaxb;x-friends:="com.github.adangel.eclipsejaxb.tests,com.github.adangel.eclipsejaxb.ui,com.github.adangel.eclipsejaxb.tests-java11"
+Import-Package: org.osgi.framework
+Bundle-ActivationPolicy: lazy
+Multi-Release: true

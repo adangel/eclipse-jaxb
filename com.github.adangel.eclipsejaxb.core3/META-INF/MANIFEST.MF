@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eclipse-jaxb core3 Plugin
+Bundle-SymbolicName: com.github.adangel.eclipsejaxb.core3;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.github.adangel.eclipsejaxb.core3.jaxb;x-friends:="com.github.adangel.eclipsejaxb.tests3,com.github.adangel.eclipsejaxb.ui3",
+ javax.xml.bind;x-friends:="com.github.adangel.eclipsejaxb.tests3,com.github.adangel.eclipsejaxb.ui3"
+Import-Package: org.osgi.framework
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: target/dependency/jakarta.activation-1.2.2.jar,
+ target/dependency/jakarta.activation-api-1.2.2.jar,
+ target/dependency/jakarta.xml.bind-api-2.3.3.jar,
+ target/dependency/jaxb-impl-2.3.3.jar,
+ .
+

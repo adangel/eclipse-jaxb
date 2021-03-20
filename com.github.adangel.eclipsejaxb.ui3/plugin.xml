@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.github.adangel.eclipsejaxb.ui3.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <action
+               class="com.github.adangel.eclipsejaxb.ui3.actions.SampleAction"
+               id="com.github.adangel.eclipsejaxb.ui3.actions.SampleAction"
+               label="&amp;UI JAXB Action"
+               toolbarPath="ui3SampleGroup"
+               tooltip="Hello, Eclipse world">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

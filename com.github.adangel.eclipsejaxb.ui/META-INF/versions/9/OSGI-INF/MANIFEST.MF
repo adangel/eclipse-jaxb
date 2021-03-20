@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Import-Package: javax.xml.bind;version="2.3.3"

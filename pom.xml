@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.adangel.eclipsejaxb</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>com.github.adangel.eclipsejaxb.core</module>
+    <module>com.github.adangel.eclipsejaxb.ui</module>
+    <module>com.github.adangel.eclipsejaxb.tests</module>
+    <module>com.github.adangel.eclipsejaxb.tests-java11</module>
+    <module>com.github.adangel.eclipsejaxb.feature</module>
+
+    <module>com.github.adangel.eclipsejaxb.core1</module>
+    <module>com.github.adangel.eclipsejaxb.ui1</module>
+    <module>com.github.adangel.eclipsejaxb.tests1</module>
+    <module>com.github.adangel.eclipsejaxb.tests1-java11</module>
+    <module>com.github.adangel.eclipsejaxb.feature1</module>
+
+    <module>com.github.adangel.eclipsejaxb.core2</module>
+    <module>com.github.adangel.eclipsejaxb.ui2</module>
+    <module>com.github.adangel.eclipsejaxb.tests2</module>
+    <module>com.github.adangel.eclipsejaxb.feature2</module>
+
+    <module>com.github.adangel.eclipsejaxb.core3</module>
+    <module>com.github.adangel.eclipsejaxb.ui3</module>
+    <module>com.github.adangel.eclipsejaxb.tests3</module>
+    <module>com.github.adangel.eclipsejaxb.tests3-java11</module>
+    <module>com.github.adangel.eclipsejaxb.feature3</module>
+
+    <module>com.github.adangel.eclipsejaxb.feature4</module>
+
+    <module>com.github.adangel.eclipsejaxb.jaxb-impl-binding</module>
+    <module>com.github.adangel.eclipsejaxb.feature5</module>
+
+    <module>com.github.adangel.eclipsejaxb.target</module>
+    <module>com.github.adangel.eclipsejaxb.p2repo</module>
+  </modules>
+
+  <properties>
+    <tycho-version>2.2.0</tycho-version>
+<!--     <tycho-version>1.7.0</tycho-version> -->
+    <project.source.encoding>UTF-8</project.source.encoding>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <target>
+            <artifact>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>com.github.adangel.eclipsejaxb.target</artifactId>
+              <version>1.0.0-SNAPSHOT</version>
+            </artifact>
+          </target>
+          <executionEnvironment>JavaSE-1.8</executionEnvironment>
+          <environments>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+          </environments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-compiler-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+            <useJDK>BREE</useJDK>
+            <deriveReleaseCompilerArgumentFromTargetLevel>false</deriveReleaseCompilerArgumentFromTargetLevel>
+            <release></release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

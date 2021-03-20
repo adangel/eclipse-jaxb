@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Import-Package: org.osgi.framework,
+ javax.xml.bind;version="2.3.3",
+ javax.xml.bind.annotation;version="2.3.3",
+ com.sun.xml.bind.v2,
+ org.glassfish.hk2.osgiresourcelocator

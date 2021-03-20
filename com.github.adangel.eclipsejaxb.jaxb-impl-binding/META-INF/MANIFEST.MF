@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: jaxb-impl-binding
+Bundle-SymbolicName: com.github.adangel.eclipsejaxb.jaxb-impl-binding
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: jakarta.xml.bind
+Automatic-Module-Name: com.github.adangel.eclipsejaxb.jaxb.impl.binding
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: com.sun.xml.bind.v2
